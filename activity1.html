@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form_1 {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        }
+        .form_3 {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        }
+        input {
+        opacity: 0.5; /* 0 is invisible, 1 is fully visible */
+        color: #ccc; /* light gray */
+        }
+        .form_4 {
+        font-size: smaller;
+        display: flex;
+        gap: 40px;
+        justify-content: flex-start;
+        }
+        .form_5 {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        font-size: smaller;
+        }
+        .form_6 {
+        display: flex;
+        justify-content: flex-start;
+        font-size: smaller;
+        }
+        .label{
+            color:4F200D;
+        }
+        .head {
+        font-size: xx-large;
+        color:rgb(79, 32, 13);
+        font-weight: bold;
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+        }
+        *{
+            font-family: open-sans, cursive;
+        }
+        #email{
+            width: 413px;
+        }
+        #age{
+            width: 50px;
+        }
+        #myfile {
+        width: 120px;
+        }
+        #bio{
+            width: 413px;
+            height: 100px;
+        }
+        .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: rgb(246, 241, 233);
+    }
+
+        .account-box {
+            background:rgb(246, 241, 233);
+            border: 2px solid #c9b6e7;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 32px 24px;
+            max-width: 520px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="account-box">
+            <div class="head">Create Account</div>
+            <form style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start; width: 100%; max-width: 500px;">
+                <div style="display: flex; gap: 10px; width: 100%;">
+                    <div style="flex: 1;">
+                        <label for="first_name" class="label">First name*</label><br>
+                        <input type="text" id="first_name" name="first_name" value="First name" required><br>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="last_name" class="label">Last name*</label><br>
+                        <input type="text" id="last_name" name="last_name" value="Last name">
+                    </div>
+                </div>
+                <label for="email" class="label">Email*</label>
+                <input type="text" id="email" name="email" value="Email">
+                <div style="display: flex; gap: 10px; width: 100%;">
+                    <div style="flex: 1;">
+                        <label for="password" class="label">Password*</label><br>
+                        <input type="text" id="password" name="password" value="Password">
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="confirm_password" class="label">Confirm password*</label>
+                        <input type="text" id="confirm_password" name="confirm_password" value="Confirm password">
+                    </div>
+                </div>
+                <label for="gender" class="label">Gender*</label>
+                <div style="display: flex; gap: 10px;">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <label class="label">Hobbies*</label>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <input type="checkbox" name="music" id="music">
+                    <label for="music">Music</label>
+                    <input type="checkbox" name="sports" id="sports">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" name="travel" id="travel"> 
+                    <label for="travel">Travel</label>
+                    <input type="checkbox" name="movies" id="movies">
+                    <label for="movies">Movies</label>
+                </div>
+                <label for="income" class="label">Source of income*</label>
+                <select name="income" id="income">
+                    <option value="work full time">Work full-time.</option>
+                    <option value="parent">From parent.</option>
+                    <option value="selling">Selling good.</option>
+                </select>
+                <label for="salary" class="label">Income (20K)*:</label>
+                <input type="range" id="salary" name="salary" min="0" max="20000" step="100" >
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <label for="myfile" class="label">Upload profile picture*:</label>
+                    <input type="file" id="myfile" name="myfile">
+                    <label for="age" class="label">Age*</label>
+                    <input type="text" id="age" name="age" placeholder="Age">
+                </div>
+                <label for="bio">Bio*</label>
+                <input type="text" id="bio">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+   
+</body>
+</html>

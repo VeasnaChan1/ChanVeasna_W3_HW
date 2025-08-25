@@ -1,0 +1,30 @@
+.wrapper{
+    height: 90vh;
+    background-color: rgb(19, 11, 27);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.box{
+    background-color: rgb(43, 92, 226);
+    border: 1px black solid ;
+    border-radius: 30px;
+    color: white;
+}
+
+.a{
+    grid-column: 1/4;
+}
+.f{
+    grid-column: 1/4;
+}
+
+.b{
+    grid-row: 2/4;
+}
+
+.e{
+    grid-column: 2/4;
+}
